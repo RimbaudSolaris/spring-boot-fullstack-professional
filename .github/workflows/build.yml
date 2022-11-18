@@ -13,9 +13,6 @@ env:
   POSTGRESQL_PASSWORD: password
   JAVA_VERSION: 1.15
 
-  before_install:
-    - chmod +x mvnw
-
 jobs:
   build:
     runs-on: ubuntu-latest
