@@ -13,6 +13,9 @@ env:
   POSTGRESQL_PASSWORD: password
   JAVA_VERSION: 1.15
 
+  before_install:
+    - chmod +x mvnw
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,7 +35,6 @@ jobs:
         with:
           java-version: ${{ env.JAVA_VERSION }}
       - name: Maven Clean Package
-      - before_install: chmod +x mvnw
         run: |
           ./mvnw --no-transfer-progress clean package -P build-frontend
           
