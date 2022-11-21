@@ -2,15 +2,15 @@ name: CI
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
   workflow_dispatch:
 
 env:
   POSTGRESQL_VERSION: 13.1
-  POSTGRESQL_DB: hellodata
+  POSTGRESQL_DB: amigoscode
   POSTGRESQL_USER: postgres
-  POSTGRESQL_PASSWORD: 123456
+  POSTGRESQL_PASSWORD: password
   JAVA_VERSION: 1.17
 
 jobs:
@@ -33,4 +33,4 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
       - name: Maven Clean Package
         run: |
-          ./mvnw --no-transfer-progress clean package -P build-frontend -e
+          ./mvnw --no-transfer-progress clean package -P build-frontend -X
