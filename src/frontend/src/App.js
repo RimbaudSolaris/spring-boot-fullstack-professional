@@ -11,7 +11,7 @@ import {
     Badge,
     Tag,
     Avatar,
-    Radio, Popconfirm, Image, Divider
+    Radio, Popconfirm
 } from 'antd';
 
 import {
@@ -29,7 +29,7 @@ import './App.css';
 import {errorNotification, successNotification} from "./Notification";
 
 
-const {Header, Content, Footer, Sider} = Layout;
+const {Header, Content, Sider} = Layout;
 const {SubMenu} = Menu;
 
 const TheAvatar = ({name}) => {
