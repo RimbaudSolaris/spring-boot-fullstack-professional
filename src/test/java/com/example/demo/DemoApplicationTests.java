@@ -11,7 +11,7 @@ class DemoApplicationTests {
 	void contextLoads() {
 
 		Assertions.fail("Oups test failed ");
-	
+
 	}
 
 }
