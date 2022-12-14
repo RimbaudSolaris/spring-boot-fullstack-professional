@@ -223,7 +223,7 @@ function App() {
             </Content>
             <footer style={{textAlign: 'center'}}>
 
-                
+
                 <Image Width={75} src="https://user-images.githubusercontent.com/31545584/207446464-e88c1cf4-b85a-4061-896f-6afc513b72d1.png"></Image>
             </footer>
         </Layout>
